@@ -1,0 +1,146 @@
+@media all and (max-width: 480px) {  
+  .home-1-title {
+    transform: scale(0.3) !important;
+    margin-top: 25vh !important;
+  }
+
+  .home-1-scroll {
+    transform: translateY(-5vh) !important;
+  }
+
+  #about-us-body {
+    padding: 0 50px !important;
+    border-left: none !important;
+  }
+
+  #mouse-animation-circle {
+    visibility: visible !important;
+  }
+
+  #mouse-animation-line-pc {
+    display: none !important;
+  }
+
+  #about-us-container {
+    flex-direction: column !important;
+  }
+}
+
+.home-1-title {
+  font-family: "Inter", "Readex Pro", sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  transform: translateY(-110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  margin-top: 50vh;
+}
+
+
+#home-1-logo-left {
+  height: 125px;
+  transform: translate(0, 12px);
+  transition: transform .3s;
+  cursor: text;
+}
+
+#home-1-logo-right {
+  height: 125px;
+  transform: translate(0, 12px);
+  transition: transform .3s;
+  cursor: text;
+}
+
+.home-1-title-txt {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+  transition-delay: .1s;
+}
+
+.home-1-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-10vh);
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#mouse-animation {
+  border: #fff 2px solid;
+  border-radius: 100px;
+  width: 15px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#mouse-animation-circle {
+  display: inline-block;
+  border: #fff 1px solid;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  margin-top: 20px;
+  transition: transform .3s;
+  visibility: hidden;
+}
+
+#mouse-animation-line-pc {
+  display: inline-block;
+  border: #fff 1px solid;
+  background-color: #fff;
+  width: 1px;
+  height: 6px;
+  margin-top: 5.5px;
+  margin-right: 6px;
+}
+
+#about-us {
+  position: absolute;
+  top: 100vh;
+  height: auto;
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us-body {
+  padding: 0 150px;
+  flex: 2;
+  border-left: #a2a0a0 2px solid;
+}
+
+#projects {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#projects-body {
+  margin-top: 50px;
+}
