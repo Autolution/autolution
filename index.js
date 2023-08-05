@@ -1,5 +1,5 @@
 const express = require("express");
-const app = express()
+const app = express();
 
 app.use(require("express").static(__dirname + "/public"));
 
@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about-us", (req, res) => {
-    res.sendFile(__dirname + "/public/about-us.html");
+  res.sendFile(__dirname + "/public/about-us.html");
 });
 
 app.get("/team", (req, res) => {
@@ -19,4 +19,4 @@ app.get("/team", (req, res) => {
   res.status(404).sendFile(__dirname + "/public/page-not-found.html");
 }); */
 
-app.listen(8080);
+app.listen(5500);
