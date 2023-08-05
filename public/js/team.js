@@ -2,9 +2,9 @@
 
 if (window.matchMedia("(max-width: 480px)").matches) {
   window.onload = function() {
-    document.querySelector("#tca-card").style.setProperty("width", "calc(" + document.querySelector("#navbar").offsetWidth + "px - 100px)", "important");
-    document.querySelector("#jip-card").style.setProperty("width", "calc(" + document.querySelector("#navbar").offsetWidth + "px - 100px)", "important");
-    document.querySelector("#hyderite-card").style.setProperty("width", "calc(" + document.querySelector("#navbar").offsetWidth + "px - 100px)", "important");
+    document.querySelector("#tca-card").style.setProperty("width", "calc(" + document.querySelector("#navbar").offsetWidth + "px - 102px)", "important");
+    document.querySelector("#jip-card").style.setProperty("width", "calc(" + document.querySelector("#navbar").offsetWidth + "px - 102px)", "important");
+    document.querySelector("#hyderite-card").style.setProperty("width", "calc(" + document.querySelector("#navbar").offsetWidth + "px - 102px)", "important");
     document.querySelector("#h-gradient").style.setProperty("width", document.querySelector("#navbar").offsetWidth + "px", "important");
     document.querySelector("#j-gradient").style.setProperty("width", document.querySelector("#navbar").offsetWidth + "px", "important");
     document.querySelector("#t-gradient").style.setProperty("width", document.querySelector("#navbar").offsetWidth + "px", "important");
@@ -25,13 +25,12 @@ if (window.matchMedia("(max-width: 480px)").matches) {
       document.querySelector("#h-wrapper").style.display = "none";
       document.querySelector("#h-gradient").style.display = "none";
       card.style.transform = "scale(1)";
-      // card.style.setProperty("width", "calc(100% - 120px)", "important");
-      // card.style.setProperty("height", "calc(100% - 150px)", "important");
-      card.style.height = "calc(100% - 150px)";
+      card.style.height = "calc(100% - 182.5px)";
       card.style.width = "calc(100% - 120px)";
       card.style.margin = "10px";
       card.style.top = "0px";
       card.style.left = "0px";
+      document.querySelector("#h-about-me-extended-txt").style.height = "calc(" + document.querySelector("#hyderite-card").offsetHeight + "px - 155px - 120px - 61px - 16px - 39px - 16px)";
       card.addEventListener("click", function() {
         card.style.transform = "scale(1)";
       });
@@ -58,17 +57,23 @@ if (window.matchMedia("(max-width: 480px)").matches) {
 
   document.querySelector("#jip-card").addEventListener("click", function() {
     var card = document.querySelector("#jip-card");
-    card.style.transform = "scale(0.85) translate(-215px, 0px)";
+    card.style.transform = "rotate(0) scale(0.85)";
     document.querySelector("#j-wrapper").style.opacity = "0";
     setTimeout(function() {
+      card.style.zIndex = "100";
+      card.style.position = "fixed";
       document.querySelector("#black-filter").style.zIndex = "10";
       document.querySelector("#black-filter").style.opacity = "0.5";
       document.querySelector("#jip-card").style.zIndex = "100";
       document.querySelector("#j-wrapper").style.display = "none";
       document.querySelector("#j-gradient").style.display = "none";
       card.style.transform = "scale(1)";
-      card.style.width = "1000px";
-      card.style.height = "500px";
+      card.style.height = "calc(100% - 182.5px)";
+      card.style.width = "calc(100% - 120px)";
+      card.style.margin = "10px";
+      card.style.top = "0px";
+      card.style.left = "0px";
+      // document.querySelector("#j-about-me-extended-txt").style.height = "calc(" + document.querySelector("#jip-card").offsetHeight + "px - 155px - 120px - 61px - 16px - 39px - 16px)";
       card.addEventListener("click", function() {
         card.style.transform = "scale(1)";
       });
@@ -133,6 +138,25 @@ if (window.matchMedia("(max-width: 480px)").matches) {
 
 // [pc]
 
+if (window.matchMedia("(min-width: 480px)").matches) {
+  document.querySelector("#hyderite-card").addEventListener("click", function() {
+    var card = document.querySelector("#hyderite-card");
+    setTimeout(function() {
+      card.style.width = "1000px";
+      card.style.height = "500px";
+    }, 400);
+  });
+
+  document.querySelector("#jip-card").addEventListener("click", function() {
+    var card = document.querySelector("#jip-card");
+    setTimeout(function() {
+      card.style.width = "1000px";
+      card.style.height = "500px";
+      document.querySelector("#black-filter").style.zIndex = "10";
+    }, 400);
+  });
+};
+
 document.querySelector("#hyderite-card").addEventListener("click", function() {
   var card = document.querySelector("#hyderite-card");
   card.style.transform = "scale(0.85)";
@@ -144,8 +168,6 @@ document.querySelector("#hyderite-card").addEventListener("click", function() {
     document.querySelector("#h-wrapper").style.display = "none";
     document.querySelector("#h-gradient").style.display = "none";
     card.style.transform = "scale(1)";
-    card.style.width = "1000px";
-    card.style.height = "500px";
     card.addEventListener("click", function() {
       card.style.transform = "scale(1)";
     });
@@ -186,14 +208,11 @@ document.querySelector("#jip-card").addEventListener("click", function() {
   card.style.transform = "scale(0.85) translate(-215px, 0px)";
   document.querySelector("#j-wrapper").style.opacity = "0";
   setTimeout(function() {
-    document.querySelector("#black-filter").style.zIndex = "10";
     document.querySelector("#black-filter").style.opacity = "0.5";
     document.querySelector("#jip-card").style.zIndex = "100";
     document.querySelector("#j-wrapper").style.display = "none";
     document.querySelector("#j-gradient").style.display = "none";
     card.style.transform = "scale(1)";
-    card.style.width = "1000px";
-    card.style.height = "500px";
     card.addEventListener("click", function() {
       card.style.transform = "scale(1)";
     });

@@ -27,6 +27,10 @@
   .gradient-arrow {
     transform: rotate(90deg) translateX(10px) !important;
   }
+
+  /* #j-wrapper-extended, #h-wrapper-extended, #t-wrapper-extended {
+    overflow-y: scroll;
+  } */
 }
 
 @media all and (min-width: 480px) {
@@ -133,6 +137,18 @@
   border-radius: 100%;
 }
 
+#hyderite-pfp {
+  width: 70px;
+  aspect-ratio: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotate 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-delay: .75s;
+}
+
 #hyderite-card, #jip-card, #tca-card {
   z-index: 1;
 }
@@ -151,6 +167,10 @@
   transition: opacity .3s, transform .3s;
 }
 
+#h-extended-title::after, #j-extended-title::after, #t-extended-title::after {
+  display: none;
+}
+
 #h-extended-pfp, #j-extended-pfp, #t-extended-pfp {
   width: 100px;
   aspect-ratio: 1;
@@ -158,6 +178,14 @@
   opacity: 0;
   transform: translateY(15px);
   transition: opacity .3s, transform .3s;
+}
+
+.about-me-extended-txt {
+  background-color: #1b1b1b;
+  padding: 15px;
+  border-radius: 15px;
+  overflow-y: scroll;
+  display: block;
 }
 
 .close {
@@ -189,16 +217,11 @@
   z-index: 10;
 }
 
-#hyderite-pfp {
-  width: 70px;
-  aspect-ratio: 1;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  animation: rotate 1.25s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-delay: .75s;
+#j-wrapper-extended, #h-wrapper-extended, #t-wrapper-extended {
+  display: none;
+  opacity: 0;
+  transition: opacity .3s;
+  margin-top: -10px;
 }
 
 #h-gradient, #j-gradient, #t-gradient {
@@ -218,12 +241,7 @@
   transform: rotate(90deg) translateX(-5px);
 }
 
-#j-wrapper-extended, #h-wrapper-extended, #t-wrapper-extended {
-  display: none;
-  opacity: 0;
-  transition: opacity .3s;
-  margin-top: -10px;
-}
+
 
 #j-wrapper-extended .card-socials, #h-wrapper-extended .card-socials, #t-wrapper-extended .card-socials {
   justify-content: left;
@@ -253,6 +271,10 @@
   opacity: 0;
   transform: translateY(10px);
   transition: opacity .3s, transform .3s;
+}
+
+#h-extended-socials, #j-extended-socials, #t-extended-socials {
+  flex-direction: column;
 }
 
 .card-socials {
