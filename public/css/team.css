@@ -28,6 +28,14 @@
     transform: rotate(90deg) translateX(10px) !important;
   }
 
+  #h-extended-socials, #j-extended-socials, #t-extended-socials {
+    flex-direction: column;
+  }
+
+  .about-me-extended-txt {
+    overflow-y: scroll;
+  }
+
   /* #j-wrapper-extended, #h-wrapper-extended, #t-wrapper-extended {
     overflow-y: scroll;
   } */
@@ -184,7 +192,6 @@
   background-color: #1b1b1b;
   padding: 15px;
   border-radius: 15px;
-  overflow-y: scroll;
   display: block;
 }
 
@@ -271,10 +278,6 @@
   opacity: 0;
   transform: translateY(10px);
   transition: opacity .3s, transform .3s;
-}
-
-#h-extended-socials, #j-extended-socials, #t-extended-socials {
-  flex-direction: column;
 }
 
 .card-socials {
