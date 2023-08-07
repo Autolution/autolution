@@ -17,13 +17,13 @@ if (window.matchMedia("(max-width: 480px)").matches) {
     var card = document.querySelector("#hyderite-card");
     card.style.transform = "rotate(0) scale(0.85)";
     document.querySelector("#h-wrapper").style.opacity = "0";
+    document.querySelector("#h-gradient").style.opacity = "0";
     setTimeout(function () {
       card.style.position = "fixed";
       document.querySelector("#black-filter").style.zIndex = "10";
       document.querySelector("#black-filter").style.opacity = "0.5";
       document.querySelector("#hyderite-card").style.zIndex = "100";
       document.querySelector("#h-wrapper").style.display = "none";
-      document.querySelector("#h-gradient").style.display = "none";
       card.style.transform = "scale(1)";
       card.style.width = "calc(100% - 120px)";
       card.style.height = "calc(100% - 182.5px)";
@@ -60,6 +60,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
       var card = document.querySelector("#jip-card");
       card.style.transform = "rotate(0) scale(0.85)";
       document.querySelector("#j-wrapper").style.opacity = "0";
+      document.querySelector("#j-gradient").style.opacity = "0";
       setTimeout(function () {
         card.style.zIndex = "100";
         card.style.position = "fixed";
@@ -67,7 +68,6 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         document.querySelector("#black-filter").style.opacity = "0.5";
         document.querySelector("#jip-card").style.zIndex = "100";
         document.querySelector("#j-wrapper").style.display = "none";
-        document.querySelector("#j-gradient").style.display = "none";
         card.style.transform = "scale(1)";
         card.style.width = "calc(100% - 120px)";
         card.style.height = "calc(100% - 182.5px)";
@@ -104,6 +104,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
       var card = document.querySelector("#tca-card");
       card.style.transform = "rotate(0) scale(0.85)";
       document.querySelector("#t-wrapper").style.opacity = "0";
+      document.querySelector("#t-gradient").style.opacity = "0";
       setTimeout(function () {
         card.style.zIndex = "100";
         card.style.position = "fixed";
@@ -111,7 +112,6 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         document.querySelector("#black-filter").style.opacity = "0.5";
         document.querySelector("#tca-card").style.zIndex = "100";
         document.querySelector("#t-wrapper").style.display = "none";
-        document.querySelector("#t-gradient").style.display = "none";
         card.style.transform = "scale(1)";
         card.style.width = "calc(100% - 120px)";
         card.style.height = "calc(100% - 182.5px)";
@@ -203,13 +203,13 @@ if (window.matchMedia("(max-width: 480px)").matches) {
               var card = document.querySelector("#hyderite-card");
               card.style.transform = "rotate(0) scale(0.85)";
               document.querySelector("#h-wrapper").style.opacity = "0";
+              document.querySelector("#h-gradient").style.opacity = "0";
               setTimeout(function () {
                 card.style.position = "fixed";
                 document.querySelector("#black-filter").style.zIndex = "10";
                 document.querySelector("#black-filter").style.opacity = "0.5";
                 document.querySelector("#hyderite-card").style.zIndex = "100";
                 document.querySelector("#h-wrapper").style.display = "none";
-                document.querySelector("#h-gradient").style.display = "none";
                 card.style.transform = "scale(1)";
                 card.style.width = "calc(100% - 120px)";
                 card.style.height = "calc(100% - 182.5px)";
@@ -293,6 +293,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
               var card = document.querySelector("#jip-card");
               card.style.transform = "rotate(0) scale(0.85)";
               document.querySelector("#j-wrapper").style.opacity = "0";
+              document.querySelector("#j-gradient").style.opacity = "0";
               setTimeout(function () {
                 card.style.zIndex = "100";
                 card.style.position = "fixed";
@@ -300,7 +301,6 @@ if (window.matchMedia("(max-width: 480px)").matches) {
                 document.querySelector("#black-filter").style.opacity = "0.5";
                 document.querySelector("#jip-card").style.zIndex = "100";
                 document.querySelector("#j-wrapper").style.display = "none";
-                document.querySelector("#j-gradient").style.display = "none";
                 card.style.transform = "scale(1)";
                 card.style.width = "calc(100% - 120px)";
                 card.style.height = "calc(100% - 182.5px)";
@@ -385,6 +385,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
               var card = document.querySelector("#tca-card");
               card.style.transform = "rotate(0) scale(0.85)";
               document.querySelector("#t-wrapper").style.opacity = "0";
+              document.querySelector("#t-gradient").style.opacity = "0";
               setTimeout(function () {
                 card.style.zIndex = "100";
                 card.style.position = "fixed";
@@ -392,7 +393,6 @@ if (window.matchMedia("(max-width: 480px)").matches) {
                 document.querySelector("#black-filter").style.opacity = "0.5";
                 document.querySelector("#tca-card").style.zIndex = "100";
                 document.querySelector("#t-wrapper").style.display = "none";
-                document.querySelector("#t-gradient").style.display = "none";
                 card.style.transform = "scale(1)";
                 card.style.width = "calc(100% - 120px)";
                 card.style.height = "calc(100% - 182.5px)";
@@ -470,12 +470,12 @@ document.querySelector("#hyderite-card").addEventListener("click", function () {
   var card = document.querySelector("#hyderite-card");
   card.style.transform = "scale(0.85)";
   document.querySelector("#h-wrapper").style.opacity = "0";
+  document.querySelector("#h-gradient").style.opacity = "0";
   setTimeout(function () {
     document.querySelector("#black-filter").style.zIndex = "10";
     document.querySelector("#black-filter").style.opacity = "0.5";
     document.querySelector("#hyderite-card").style.zIndex = "100";
     document.querySelector("#h-wrapper").style.display = "none";
-    document.querySelector("#h-gradient").style.display = "none";
     card.style.transform = "scale(1)";
     card.addEventListener("click", function () {
       card.style.transform = "scale(1)";
@@ -516,11 +516,11 @@ document.querySelector("#jip-card").addEventListener("click", function () {
   var card = document.querySelector("#jip-card");
   card.style.transform = "scale(0.85) translate(-215px, 0px)";
   document.querySelector("#j-wrapper").style.opacity = "0";
+  document.querySelector("#j-gradient").style.opacity = "0";
   setTimeout(function () {
     document.querySelector("#black-filter").style.opacity = "0.5";
     document.querySelector("#jip-card").style.zIndex = "100";
     document.querySelector("#j-wrapper").style.display = "none";
-    document.querySelector("#j-gradient").style.display = "none";
     card.style.transform = "scale(1)";
     card.addEventListener("click", function () {
       card.style.transform = "scale(1)";
@@ -566,11 +566,11 @@ document.querySelector("#tca-card").addEventListener("click", function () {
   var card = document.querySelector("#tca-card");
   card.style.transform = "scale(0.85) translate(215px, 0px)";
   document.querySelector("#t-wrapper").style.opacity = "0";
+  document.querySelector("#t-gradient").style.opacity = "0";
   setTimeout(function () {
     document.querySelector("#black-filter").style.opacity = "0.5";
     document.querySelector("#tca-card").style.zIndex = "100";
     document.querySelector("#t-wrapper").style.display = "none";
-    document.querySelector("#t-gradient").style.display = "none";
     card.style.transform = "scale(1)";
     card.addEventListener("click", function () {
       card.style.transform = "scale(1)";
@@ -630,7 +630,6 @@ document.querySelector("#black-filter").addEventListener("click", function () {
       hCard.style.zIndex = "1";
       document.querySelector("#h-wrapper").style.display = "block";
       document.querySelector("#h-gradient").style.display = "flex";
-      document.querySelector("#h-gradient-arrow").style.display = "block";
       setTimeout(function () {
         document.querySelector("#h-wrapper").style.opacity = "1";
         document.querySelector("#h-gradient").style.opacity = "1";
@@ -658,13 +657,12 @@ document.querySelector("#black-filter").addEventListener("click", function () {
       var card = document.querySelector("#hyderite-card");
       card.style.transform = "scale(0.85)";
       document.querySelector("#h-wrapper").style.opacity = "0";
+      document.querySelector("#h-gradient").style.opacity = "0";
       setTimeout(function () {
         document.querySelector("#black-filter").style.zIndex = "10";
         document.querySelector("#black-filter").style.opacity = "0.5";
         document.querySelector("#hyderite-card").style.zIndex = "100";
         document.querySelector("#h-wrapper").style.display = "none";
-        document.querySelector("#h-gradient").style.display = "none";
-        document.querySelector("#h-gradient-arrow").style.display = "none";
         card.style.transform = "scale(1)";
         card.style.width = "1000px";
         card.style.height = "500px";
@@ -707,7 +705,6 @@ document.querySelector("#black-filter").addEventListener("click", function () {
       jCard.style.zIndex = "1";
       document.querySelector("#j-wrapper").style.display = "block";
       document.querySelector("#j-gradient").style.display = "flex";
-      document.querySelector("#j-gradient-arrow").style.display = "block";
       setTimeout(function () {
         document.querySelector("#j-wrapper").style.opacity = "1";
         document.querySelector("#j-gradient").style.opacity = "1";
@@ -742,13 +739,12 @@ document.querySelector("#black-filter").addEventListener("click", function () {
       var card = document.querySelector("#jip-card");
       card.style.transform = "scale(0.85) translate(-215px, 0px)";
       document.querySelector("#j-wrapper").style.opacity = "0";
+      document.querySelector("#j-gradient").style.opacity = "0";
       setTimeout(function () {
         document.querySelector("#black-filter").style.zIndex = "10";
         document.querySelector("#black-filter").style.opacity = "0.5";
         document.querySelector("#jip-card").style.zIndex = "100";
         document.querySelector("#j-wrapper").style.display = "none";
-        document.querySelector("#j-gradient").style.display = "none";
-        document.querySelector("#j-gradient-arrow").style.display = "none";
         card.style.transform = "scale(1)";
         card.style.width = "1000px";
         card.style.height = "500px";
@@ -794,7 +790,6 @@ document.querySelector("#black-filter").addEventListener("click", function () {
       tCard.style.zIndex = "1";
       document.querySelector("#t-wrapper").style.display = "block";
       document.querySelector("#t-gradient").style.display = "flex";
-      document.querySelector("#t-gradient-arrow").style.display = "block";
       setTimeout(function () {
         document.querySelector("#t-wrapper").style.opacity = "1";
         document.querySelector("#t-gradient").style.opacity = "1";
@@ -829,13 +824,12 @@ document.querySelector("#black-filter").addEventListener("click", function () {
       var card = document.querySelector("#tca-card");
       card.style.transform = "scale(0.85) translate(215px, 0px)";
       document.querySelector("#t-wrapper").style.opacity = "0";
+      document.querySelector("#t-gradient").style.opacity = "0";
       setTimeout(function () {
         document.querySelector("#black-filter").style.zIndex = "10";
         document.querySelector("#black-filter").style.opacity = "0.5";
         document.querySelector("#tca-card").style.zIndex = "100";
         document.querySelector("#t-wrapper").style.display = "none";
-        document.querySelector("#t-gradient").style.display = "none";
-        document.querySelector("#t-gradient-arrow").style.display = "none";
         card.style.transform = "scale(1)";
         card.style.width = "1000px";
         card.style.height = "500px";
@@ -923,12 +917,12 @@ if (window.matchMedia("(min-width: 480px)").matches) {
               var card = document.querySelector("#hyderite-card");
               card.style.transform = "scale(0.85)";
               document.querySelector("#h-wrapper").style.opacity = "0";
+              document.querySelector("#h-gradient").style.opacity = "0";
               setTimeout(function () {
                 document.querySelector("#black-filter").style.zIndex = "10";
                 document.querySelector("#black-filter").style.opacity = "0.5";
                 document.querySelector("#hyderite-card").style.zIndex = "100";
                 document.querySelector("#h-wrapper").style.display = "none";
-                document.querySelector("#h-gradient").style.display = "none";
                 card.style.transform = "scale(1)";
                 card.style.width = "1000px";
                 card.style.height = "500px";
@@ -1009,12 +1003,12 @@ if (window.matchMedia("(min-width: 480px)").matches) {
               var card = document.querySelector("#jip-card");
               card.style.transform = "scale(0.85) translate(-215px, 0px)";
               document.querySelector("#j-wrapper").style.opacity = "0";
+              document.querySelector("#j-gradient").style.opacity = "0";
               setTimeout(function () {
                 document.querySelector("#black-filter").style.zIndex = "10";
                 document.querySelector("#black-filter").style.opacity = "0.5";
                 document.querySelector("#jip-card").style.zIndex = "100";
                 document.querySelector("#j-wrapper").style.display = "none";
-                document.querySelector("#j-gradient").style.display = "none";
                 card.style.transform = "scale(1)";
                 card.style.width = "1000px";
                 card.style.height = "500px";
@@ -1098,12 +1092,12 @@ if (window.matchMedia("(min-width: 480px)").matches) {
               var card = document.querySelector("#tca-card");
               card.style.transform = "scale(0.85) translate(215px, 0px)";
               document.querySelector("#t-wrapper").style.opacity = "0";
+              document.querySelector("#t-gradient").style.opacity = "0";
               setTimeout(function () {
                 document.querySelector("#black-filter").style.zIndex = "10";
                 document.querySelector("#black-filter").style.opacity = "0.5";
                 document.querySelector("#tca-card").style.zIndex = "100";
                 document.querySelector("#t-wrapper").style.display = "none";
-                document.querySelector("#t-gradient").style.display = "none";
                 card.style.transform = "scale(1)";
                 card.style.width = "1000px";
                 card.style.height = "500px";
