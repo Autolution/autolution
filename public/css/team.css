@@ -254,6 +254,7 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  transition: opacity .3s;
 }
 
 .gradient-arrow {
