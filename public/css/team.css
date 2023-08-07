@@ -28,10 +28,6 @@
     transform: rotate(90deg) translateX(10px) !important;
   }
 
-  #h-extended-socials, #j-extended-socials, #t-extended-socials {
-    /* flex-direction: column; */
-  }
-
   .about-me-extended-txt {
     overflow-y: scroll;
   }
