@@ -25,7 +25,8 @@ if (window.matchMedia("(max-width: 480px)").matches) {
       document.querySelector("#h-wrapper").style.display = "none";
       document.querySelector("#h-gradient").style.display = "none";
       card.style.transform = "scale(1)";
-      card.style.height = "calc(100% - 182.5px)";
+      // card.style.height = "calc(100% - 182.5px)";
+      card.style.height = "calc(100% - 200px)";
       card.style.width = "calc(100% - 120px)";
       card.style.margin = "10px";
       card.style.top = "0px";

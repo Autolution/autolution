@@ -39,6 +39,14 @@
   #t-extended-title {
     font-size: 35px !important;
   }
+
+  .card-socials {
+    flex-wrap: nowrap !important;
+  }
+
+  .card-socials-preview {
+    transform: translateY(20px);
+  }
 }
 
 @media all and (min-width: 480px) {
@@ -286,7 +294,7 @@
   padding: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   height: 5px;
   margin-top: 10px;
