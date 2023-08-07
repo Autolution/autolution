@@ -29,16 +29,20 @@
   }
 
   #h-extended-socials, #j-extended-socials, #t-extended-socials {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .about-me-extended-txt {
     overflow-y: scroll;
   }
 
-  /* #j-wrapper-extended, #h-wrapper-extended, #t-wrapper-extended {
-    overflow-y: scroll;
-  } */
+  #t-wrapper-extended {
+    margin-top: -10px;
+  }
+
+  #t-extended-title {
+    font-size: 35px !important;
+  }
 }
 
 @media all and (min-width: 480px) {
@@ -58,6 +62,10 @@
 
   #tca-card {
     transform: rotate(15deg) translate(215px, -30px);
+  }
+
+  #t-wrapper-extended {
+    margin-top: 15px;
   }
 }
 
@@ -248,8 +256,6 @@
   transform: rotate(90deg) translateX(-5px);
 }
 
-
-
 #j-wrapper-extended .card-socials, #h-wrapper-extended .card-socials, #t-wrapper-extended .card-socials {
   justify-content: left;
   margin-left: -10px;
@@ -284,7 +290,7 @@
   padding: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   height: 5px;
   margin-top: 10px;

@@ -100,17 +100,23 @@ if (window.matchMedia("(max-width: 480px)").matches) {
 
   document.querySelector("#tca-card").addEventListener("click", function() {
     var card = document.querySelector("#tca-card");
-    card.style.transform = "scale(0.85) translate(215px, 0px)";
+    card.style.transform = "rotate(0) scale(0.85)";
     document.querySelector("#t-wrapper").style.opacity = "0";
     setTimeout(function() {
+      card.style.zIndex = "100";
+      card.style.position = "fixed";
       document.querySelector("#black-filter").style.zIndex = "10";
       document.querySelector("#black-filter").style.opacity = "0.5";
       document.querySelector("#tca-card").style.zIndex = "100";
       document.querySelector("#t-wrapper").style.display = "none";
       document.querySelector("#t-gradient").style.display = "none";
       card.style.transform = "scale(1)";
-      card.style.width = "1000px";
-      card.style.height = "500px";
+      card.style.height = "calc(100% - 182.5px)";
+      card.style.width = "calc(100% - 120px)";
+      card.style.margin = "10px";
+      card.style.top = "0px";
+      card.style.left = "0px";
+      document.querySelector("#t-about-me-extended-txt").style.height = "calc(" + document.querySelector("#tca-card").offsetHeight + "px - 155px - 120px - 61px - 16px - 39px - 16px)";
       card.addEventListener("click", function() {
         card.style.transform = "scale(1)";
       });
@@ -149,6 +155,15 @@ if (window.matchMedia("(min-width: 480px)").matches) {
 
   document.querySelector("#jip-card").addEventListener("click", function() {
     var card = document.querySelector("#jip-card");
+    setTimeout(function() {
+      card.style.width = "1000px";
+      card.style.height = "500px";
+      document.querySelector("#black-filter").style.zIndex = "10";
+    }, 400);
+  });
+
+  document.querySelector("#tca-card").addEventListener("click", function() {
+    var card = document.querySelector("#tca-card");
     setTimeout(function() {
       card.style.width = "1000px";
       card.style.height = "500px";
@@ -258,14 +273,11 @@ document.querySelector("#tca-card").addEventListener("click", function() {
   card.style.transform = "scale(0.85) translate(215px, 0px)";
   document.querySelector("#t-wrapper").style.opacity = "0";
   setTimeout(function() {
-    document.querySelector("#black-filter").style.zIndex = "10";
     document.querySelector("#black-filter").style.opacity = "0.5";
     document.querySelector("#tca-card").style.zIndex = "100";
     document.querySelector("#t-wrapper").style.display = "none";
     document.querySelector("#t-gradient").style.display = "none";
     card.style.transform = "scale(1)";
-    card.style.width = "1000px";
-    card.style.height = "500px";
     card.addEventListener("click", function() {
       card.style.transform = "scale(1)";
     });
