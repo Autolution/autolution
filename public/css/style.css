@@ -64,6 +64,16 @@ body {
   color: #cecece;
 }
 
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255, 0.35);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255, 0.35);
+}
+
 .link {
   color: #fff;
   text-decoration: none;
