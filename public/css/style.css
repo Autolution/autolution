@@ -66,12 +66,12 @@ body {
 
 ::-moz-selection {
   color: #cecece;
-  background: rgb(255, 255, 255, 0.35);
+  background: #6b6b6b;
 }
 
 ::selection {
   color: #cecece;
-  background: rgb(255, 255, 255, 0.35);
+  background: #6b6b6b;
 }
 
 .link {
