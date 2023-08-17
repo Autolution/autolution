@@ -1,0 +1,69 @@
+html {
+    height: 100%;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+@keyframes scroll-down {
+    15% {
+        margin-bottom: -15px;
+    } 25% {
+        margin-bottom: 0;
+    } 35% {
+        margin-bottom: -15px;
+    } 45% {
+        margin-bottom: 0;
+    } 55% {
+        margin-bottom: -15px;
+    } 65% {
+        margin-bottom: 0;
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-110px);
+}
+
+.scroll-down {
+    color: #fff;
+    text-decoration: none;
+    animation-iteration-count: infinite;
+}
+
+#one {
+    background: rgba(0, 0, 0, 0.65) url(https://cdn.autolution.repl.co/img/autolution/about-us/slide-1-bg.png) center / cover no-repeat fixed;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -100;
+}
+
+#one-title {
+    position: absolute;
+    transition: transform .3s;
+}
+
+#down-one {
+    display: none;
+    opacity: 0;
+    transition: transform .3s, opacity .3s, margin-bottom .3s;
+}
+
+#two {
+    background-color: magenta;
+    z-index: -10;
+    transform: translateY(100%);
+}
+
+#three {
+    background-color: green;
+    z-index: -1;
+    transform: translateY(100%);
+}
