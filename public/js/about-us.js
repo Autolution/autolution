@@ -38,3 +38,17 @@ document.querySelector("#three").addEventListener("mousewheel", function (event)
         alert("bottom");
     };
 });
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+    let touchstartY = 0;
+    let touchendY = 0;
+
+    document.querySelector("#one").addEventListener("touchstart", function (e) {
+        touchstartY = e.changedTouches[0].screenY;
+    });
+
+    document.querySelector("#one").addEventListener("touchend", function (e) {
+        touchendY = e.changedTouches[0].screenY;
+        scrollContainer.scrollLeft += touchstartY - touchendY;
+    });
+};
