@@ -17,7 +17,7 @@ window.onload = function () {
 
 document.querySelector("#one").addEventListener("mousewheel", function (event) {
     if (event.deltaY < 0) {
-        alert("top");
+        return;
     } else if (event.deltaY > 0) {
         document.querySelector("#two").style.transform = "translateY(-110px)";
     };
@@ -35,7 +35,7 @@ document.querySelector("#three").addEventListener("mousewheel", function (event)
     if (event.deltaY < 0) {
         document.querySelector("#three").style.transform = "translateY(100%)";
     } else if (event.deltaY > 0) {
-        alert("bottom");
+        return;
     };
 });
 

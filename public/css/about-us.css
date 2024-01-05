@@ -36,7 +36,7 @@ body {
 }
 
 #one {
-    background: rgba(0, 0, 0, 0.65) url(https://cdn.autolution.repl.co/img/autolution/about-us/slide-1-bg.png) center / cover no-repeat fixed;
+    background: rgba(0, 0, 0, 0.65) url(https://cdn-autolution.vercel.app/img/autolution/about-us/slide-1-bg.png) center / cover no-repeat fixed;
     background-blend-mode: overlay;
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@
     margin-top: 25vh !important;
   }
 
-  .home-1-scroll {
+  #home-1-scroll-container {
     transform: translateY(-5vh) !important;
   }
 
@@ -61,11 +61,9 @@
 }
 
 .home-1-scroll {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  transform: translateY(-10vh);
   transition: opacity .3s;
   text-decoration: none;
   color: #fff;
